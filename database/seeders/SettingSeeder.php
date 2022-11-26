@@ -16,9 +16,9 @@ class SettingSeeder extends Seeder
     public function run()
     {
         Setting::create([
-            'title'=>'SAMSOLVE',
-            'description'=>'SAMSOLVE',
-            'email'=>'info@samsolve.com',
+            'title'=>'queentechsolutions',
+            'description'=>'queentechsolutions',
+            'email'=>'info@queentechsolutions.com',
             'phone'=>'',
             'location'=>'Cairo , Egypt',
             'logo'=>'images/logo.png',

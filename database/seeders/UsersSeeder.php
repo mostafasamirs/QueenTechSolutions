@@ -27,15 +27,5 @@ class UsersSeeder extends Seeder
             'address'=>'cairo',
             'created_by'=>'admin',
         ]);
-        User::create([
-            'name'=>'admin',
-            'email'=>'user@admin.com',
-            'password'=>Hash::make('mostafa01144999586'),
-            'image'=>'userimage/avataaars.png',
-            'phone'=>'12345678963',
-            'lang'=>'en',
-            'address'=>'cairo',
-            'created_by'=>'admin',
-        ]);
     }
 }
