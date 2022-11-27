@@ -20,7 +20,8 @@ use App\Http\Controllers\Dashboard\DashboardController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Auth::routes(['register' => false]);
+// Auth::routes(['register' => false]);
+Auth::routes();
 
 Route::get('/', ['middleware' => 'guest', function()
 {

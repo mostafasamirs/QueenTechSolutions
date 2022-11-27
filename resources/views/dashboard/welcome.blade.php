@@ -60,7 +60,7 @@
                         <div class="card-body d-flex flex-column p-0" style="position: relative;">
                             <div class="d-flex flex-stack flex-grow-1 card-p">
                                 <div class="d-flex flex-column me-2">
-                                    <a href="#" class="text-dark text-hover-primary fw-bolder fs-3"><i class="fas fa-user-check styleicondashboard"></i>{{__('Tasks')}}</a>
+                                    <a href="{{route('tasks.index')}}" class="text-dark text-hover-primary fw-bolder fs-3"><i class="fas fa-user-check styleicondashboard"></i>{{__('Tasks')}}</a>
                                     <span class="text-muted fw-bold mt-1">{{__('Tasks Count')}}</span>
                                 </div>
                                 <span class="symbol symbol-50px">

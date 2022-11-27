@@ -99,12 +99,21 @@
                                                         </td>
                                                     </tr>
 
+                                                    @if ($task->file === null)
+                                                    <span>No File Download</span>
+                                                    @else
                                                     <tr>
                                                         <td class="text-gray-400">{{__('file')}}:</td>
                                                         <td class="symbol symbol-150px   mb-7">
-                                                            <img src="{{asset($task->file)}}" class="imagestyle stylenew" alt="image" loading="lazy" />
+                                                            <a href="{{asset($task->file)}}" class="btn btn-outline-success btn-sm" alt="" title=""  style="border: 2px solid #eee;" download>
+                                                                {{__('Download')}}
+                                                            </a>
+
                                                         </td>
+
                                                     </tr>
+                                                    @endif
+
 
                                                 </table>
 

@@ -23,7 +23,7 @@ class TaskController extends Controller
                 return $query->where('name', 'like', '%' . $request->search . '%')
                     ->orWhere('description', 'like', '%'  . $request->search . '%');
             });
-        })->whereNotNull('id')->Paginate(10);
+        })->whereNotNull('id')->Paginate(10)->withQueryString()->fragment('tasks');
         $settings = Setting::first();
         return view('dashboard.tasks.index', compact('tasks', 'settings'));
     }
