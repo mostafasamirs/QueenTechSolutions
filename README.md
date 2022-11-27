@@ -25,4 +25,5 @@
 ### run the application server ###
 # php artisan serve
 # npm run dev
+# http://127.0.0.1:8000
 ##### #####  ##### #####  ##### #####  #####  #####  #####
