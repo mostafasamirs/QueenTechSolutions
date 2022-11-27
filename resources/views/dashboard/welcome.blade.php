@@ -60,11 +60,11 @@
                         <div class="card-body d-flex flex-column p-0" style="position: relative;">
                             <div class="d-flex flex-stack flex-grow-1 card-p">
                                 <div class="d-flex flex-column me-2">
-                                    <a href="{{route('touchs.index')}}" class="text-dark text-hover-primary fw-bolder fs-3"><i class="fas fa-user-check styleicondashboard"></i>{{__('Orders')}}</a>
-                                    <span class="text-muted fw-bold mt-1">{{__('Orders Count')}}</span>
+                                    <a href="#" class="text-dark text-hover-primary fw-bolder fs-3"><i class="fas fa-user-check styleicondashboard"></i>{{__('Tasks')}}</a>
+                                    <span class="text-muted fw-bold mt-1">{{__('Tasks Count')}}</span>
                                 </div>
                                 <span class="symbol symbol-50px">
-                                    <span class="symbol-label fs-5 fw-bolder bg-light-success text-success">{{App\Models\Touch::whereNotNull('id')->count()}}</span>
+                                <span class="symbol-label fs-5 fw-bolder bg-light-success text-success">{{App\Models\Task::count()}}</span>
                                 </span>
                             </div>
                         <div class="resize-triggers"><div class="expand-trigger"><div style="width: 325px; height: 253px;"></div></div><div class="contract-trigger"></div></div></div>

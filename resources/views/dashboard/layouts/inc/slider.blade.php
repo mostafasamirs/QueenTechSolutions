@@ -97,213 +97,47 @@
 				                </div>
 				                {{-- User Route --}}
 
-
-				                {{-- products Route --}}
+				                {{-- User Tasks --}}
 				                <div class="menu-item">
 				                    <div class="menu-content pt-8 pb-2">
-				                        <span class="menu-section text-muted text-uppercase fs-8 ls-1">{{__('Products')}}</span>
+				                        <span class="menu-section text-muted text-uppercase fs-8 ls-1">{{__('Tasks')}}</span>
 				                    </div>
 				                </div>
-				                <div data-kt-menu-trigger="click" class="menu-item menu-accordion {{ (request()->is('admin/products*')) ? 'hover show' : '' }}">
+				                <div data-kt-menu-trigger="click" class="menu-item menu-accordion {{ (request()->is('admin/tasks*')) ? 'hover show' : '' }}">
 				                    <span class="menu-link">
 				                        <span class="menu-icon">
 				                            <!--begin::Svg Icon | path: icons/duotune/ecommerce/ecm007.svg-->
-				                            <i class="fas fa-sitemap"></i>
+                                            <i class="fas fa-tasks"></i>
 				                            <!--end::Svg Icon-->
 				                        </span>
-				                        <span class="menu-title">{{__('Products')}}</span>
+				                        <span class="menu-title">{{__('Tasks')}}</span>
 				                        <span class="menu-arrow"></span>
 				                    </span>
 
 				                    <div class="menu-sub menu-sub-accordion menu-active-bg">
 
 				                        <div class="menu-item">
-				                            <a class="menu-link {{ (request()->is('admin/products')) ? 'active' : '' }}" href="{{route('products.index')}}">
+				                            <a class="menu-link {{ (request()->is('admin/tasks')) ? 'active' : '' }}" href="{{route('tasks.index')}}">
 				                                <span class="menu-bullet">
 				                                    <span class="bullet bullet-dot"></span>
 				                                </span>
-				                                <span class="menu-title">{{__('Products')}}</span>
+				                                <span class="menu-title">{{__('Tasks')}}</span>
 				                            </a>
 				                        </div>
-				                    </div>
-				                </div>
-				                {{-- products Route --}}
-
-				                {{-- offers Route --}}
-				                <div class="menu-item">
-				                    <div class="menu-content pt-8 pb-2">
-				                        <span class="menu-section text-muted text-uppercase fs-8 ls-1">{{__('Offers')}}</span>
-				                    </div>
-				                </div>
-				                <div data-kt-menu-trigger="click" class="menu-item menu-accordion {{ (request()->is('admin/offers*')) ? 'hover show' : '' }}">
-				                    <span class="menu-link">
-				                        <span class="menu-icon">
-				                            <!--begin::Svg Icon | path: icons/duotune/ecommerce/ecm007.svg-->
-                                    <i class="fas fa-gift"></i>				                            <!--end::Svg Icon-->
-				                        </span>
-				                        <span class="menu-title">{{__('Offers')}}</span>
-				                        <span class="menu-arrow"></span>
-				                    </span>
-
-				                    <div class="menu-sub menu-sub-accordion menu-active-bg">
 
 				                        <div class="menu-item">
-				                            <a class="menu-link {{ (request()->is('admin/offers')) ? 'active' : '' }}" href="{{route('offers.index')}}">
+				                            <a class="menu-link {{ (request()->is('admin/tasks/create')) ? 'active' : '' }}" href="{{route('tasks.create')}}">
 				                                <span class="menu-bullet">
 				                                    <span class="bullet bullet-dot"></span>
 				                                </span>
-				                                <span class="menu-title">{{__('Offers')}}</span>
-				                            </a>
-				                        </div>
-				                    </div>
-				                </div>
-				                {{-- offers Route --}}
-
-				                {{-- clients Route --}}
-				                <div class="menu-item">
-				                    <div class="menu-content pt-8 pb-2">
-				                        <span class="menu-section text-muted text-uppercase fs-8 ls-1">{{__('Clients')}}</span>
-				                    </div>
-				                </div>
-				                <div data-kt-menu-trigger="click" class="menu-item menu-accordion  {{ (request()->is('admin/clients*')) ? 'hover show' : '' }}">
-				                    <span class="menu-link">
-				                        <span class="menu-icon">
-				                            <i class="fas fa-user"></i>
-				                            <!--begin::Svg Icon | path: icons/duotune/ecommerce/ecm007.svg-->
-				                            {{-- <span class="svg-icon svg-icon-2">
-				                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-				                                <path d="M21 9V11C21 11.6 20.6 12 20 12H14V8H20C20.6 8 21 8.4 21 9ZM10 8H4C3.4 8 3 8.4 3 9V11C3 11.6 3.4 12 4 12H10V8Z" fill="black" />
-				                                <path d="M15 2C13.3 2 12 3.3 12 5V8H15C16.7 8 18 6.7 18 5C18 3.3 16.7 2 15 2Z" fill="black" />
-				                                <path opacity="0.3" d="M9 2C10.7 2 12 3.3 12 5V8H9C7.3 8 6 6.7 6 5C6 3.3 7.3 2 9 2ZM4 12V21C4 21.6 4.4 22 5 22H10V12H4ZM20 12V21C20 21.6 19.6 22 19 22H14V12H20Z" fill="black" />
-				                            </svg>
-				                        </span> --}}
-				                            <!--end::Svg Icon-->
-				                        </span>
-				                        <span class="menu-title">{{__('Clients')}}</span>
-				                        <span class="menu-arrow"></span>
-				                    </span>
-				                    {{-- {{route('subjects.index')}} --}}
-				                    <div class="menu-sub menu-sub-accordion menu-active-bg">
-
-				                        {{-- {{route('clients.index')}} --}}
-				                        <div class="menu-item">
-				                            <a class="menu-link {{ (request()->is('admin/clients')) ? 'active' : '' }}" href="{{route('clients.index')}}">
-				                                <span class="menu-bullet">
-				                                    <span class="bullet bullet-dot"></span>
-				                                </span>
-				                                <span class="menu-title">{{__('Clients')}}</span>
+				                                <span class="menu-title">{{__('Create Task')}}</span>
 				                            </a>
 				                        </div>
 
 				                    </div>
-				                    {{-- {{route('clients.index')}} --}}
 				                </div>
+				                {{-- User task --}}
 
-				                {{-- client clients --}}
-
-
-				                <div class="menu-item">
-				                    <div class="menu-content pt-8 pb-2">
-				                        <span class="menu-section text-muted text-uppercase fs-8 ls-1">{{__('Orders')}}</span>
-				                    </div>
-				                </div>
-				                <div data-kt-menu-trigger="click" class="menu-item menu-accordion  {{ (request()->is('admin/touchs*')) ? 'hover show' : '' }}">
-				                    <span class="menu-link">
-				                        <span class="menu-icon">
-				                            <!-- <i class="fas fa-info-circle"></i> -->
-                                    <i class="fas fa-shopping-cart"></i>
-				                            <!--begin::Svg Icon | path: icons/duotune/ecommerce/ecm007.svg-->
-				                            {{-- <span class="svg-icon svg-icon-2">
-				                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-				                                <path d="M21 9V11C21 11.6 20.6 12 20 12H14V8H20C20.6 8 21 8.4 21 9ZM10 8H4C3.4 8 3 8.4 3 9V11C3 11.6 3.4 12 4 12H10V8Z" fill="black" />
-				                                <path d="M15 2C13.3 2 12 3.3 12 5V8H15C16.7 8 18 6.7 18 5C18 3.3 16.7 2 15 2Z" fill="black" />
-				                                <path opacity="0.3" d="M9 2C10.7 2 12 3.3 12 5V8H9C7.3 8 6 6.7 6 5C6 3.3 7.3 2 9 2ZM4 12V21C4 21.6 4.4 22 5 22H10V12H4ZM20 12V21C20 21.6 19.6 22 19 22H14V12H20Z" fill="black" />
-				                            </svg>
-				                        </span> --}}
-				                            <!--end::Svg Icon-->
-				                        </span>
-				                        <span class="menu-title">{{__('Orders')}}</span>
-				                        <span class="menu-arrow"></span>
-				                    </span>
-				                    {{-- {{route('subjects.index')}} --}}
-				                    <div class="menu-sub menu-sub-accordion menu-active-bg">
-
-				                        {{-- {{route('touchs.index')}} --}}
-				                        <div class="menu-item">
-				                            <a class="menu-link {{ (request()->is('admin/touchs')) ? 'active' : '' }}" href="{{route('touchs.index')}}">
-				                                <span class="menu-bullet">
-				                                    <span class="bullet bullet-dot"></span>
-				                                </span>
-				                                <span class="menu-title">{{__('Orders')}}</span>
-				                            </a>
-				                        </div>
-
-				                    </div>
-				                    {{-- {{route('clients.index')}} --}}
-				                </div>
-
-				                {{-- footer Route --}}
-				                <div class="menu-item">
-				                    <div class="menu-content pt-8 pb-2">
-				                        <span class="menu-section text-muted text-uppercase fs-8 ls-1">{{__('Footer')}}</span>
-				                    </div>
-				                </div>
-				                <div data-kt-menu-trigger="click" class="menu-item menu-accordion {{ (request()->is('admin/footers*')) ? 'hover show' : '' }}">
-				                    <span class="menu-link">
-				                        <span class="menu-icon">
-				                            <!--begin::Svg Icon | path: icons/duotune/ecommerce/ecm007.svg-->
-				                            <!-- <i class="fas fa-sitemap"></i> -->
-                                    <i class="fas fa-columns"></i>
-				                            <!--end::Svg Icon-->
-				                        </span>
-				                        <span class="menu-title">{{__('Footer')}}</span>
-				                        <span class="menu-arrow"></span>
-				                    </span>
-
-				                    <div class="menu-sub menu-sub-accordion menu-active-bg">
-
-				                        <div class="menu-item">
-				                            <a class="menu-link {{ (request()->is('admin/footers')) ? 'active' : '' }}" href="{{route('footers.index')}}">
-				                                <span class="menu-bullet">
-				                                    <span class="bullet bullet-dot"></span>
-				                                </span>
-				                                <span class="menu-title">{{__('Footer')}}</span>
-				                            </a>
-				                        </div>
-				                    </div>
-				                </div>
-				                {{-- footers Route --}}
-
-				                {{-- marketing Route --}}
-				                <div class="menu-item">
-				                    <div class="menu-content pt-8 pb-2">
-				                        <span class="menu-section text-muted text-uppercase fs-8 ls-1">{{__('Marketing')}}</span>
-				                    </div>
-				                </div>
-				                <div data-kt-menu-trigger="click" class="menu-item menu-accordion {{ (request()->is('admin/marketing*')) ? 'hover show' : '' }}">
-				                    <span class="menu-link">
-				                        <span class="menu-icon">
-				                            <!--begin::Svg Icon | path: icons/duotune/ecommerce/ecm007.svg-->
-                                    <i class="fab fa-facebook-f"></i>                                  				                        </span>
-				                        <span class="menu-title">{{__('marketing')}}</span>
-				                        <span class="menu-arrow"></span>
-				                    </span>
-
-				                    <div class="menu-sub menu-sub-accordion menu-active-bg">
-
-				                        <div class="menu-item">
-				                            <a class="menu-link {{ (request()->is('admin/marketing')) ? 'active' : '' }}" href="{{route('marketing.index')}}">
-				                                <span class="menu-bullet">
-				                                    <span class="bullet bullet-dot"></span>
-				                                </span>
-				                                <span class="menu-title">{{__('Marketing')}}</span>
-				                            </a>
-				                        </div>
-				                    </div>
-				                </div>
-				                {{-- marketing Route --}}
-
-				                {{-- projects settings --}}
 				                <div class="menu-item">
 				                    <div class="menu-content pt-8 pb-2">
 				                        <span class="menu-section text-muted text-uppercase fs-8 ls-1">{{__('Settings')}}</span>

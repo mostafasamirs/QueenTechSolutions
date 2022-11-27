@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Requests\Sitting;
+namespace App\Http\Requests\Setting;
 
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Foundation\Http\FormRequest;
 
-class SittingUpdateRequest extends FormRequest
+class SettingStoreRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -26,7 +26,6 @@ class SittingUpdateRequest extends FormRequest
         'title.required' =>__('Please Insert Data'),
         'description.required' =>__('Please Insert Data'),
         'logo.required' =>__('Please Insert Photo'),
-        'image.required' =>__('Please Insert Photo'),
         'email.required' =>__('Please Insert Data'),
         'call.required' =>__('Please Insert Data'),
         'vist.required' =>__('Please Insert Data'),
@@ -35,9 +34,12 @@ class SittingUpdateRequest extends FormRequest
         'instagram.required' =>__('Please Insert Data'),
         'twitter.required' =>__('Please Insert Data'),
         'linkdein.required' =>__('Please Insert Data'),
+        'image.required' =>__('Please Insert Photo'),
         'image.max' =>__('size too large 3 mb'),
+
       ];
     }
+
 
     /**
      * Get the validation rules that apply to the request.

@@ -6,7 +6,7 @@ use App\Models\Setting;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
-use App\Http\Requests\Sitting\SittingUpdateRequest;
+use App\Http\Requests\Setting\SettingUpdateRequest;
 
 class SettingController extends Controller
 {
@@ -83,7 +83,7 @@ class SettingController extends Controller
      * @param  \App\Models\Setting  $setting
      * @return \Illuminate\Http\Response
      */
-    public function update(SittingUpdateRequest $request, Setting $setting)
+    public function update(SettingUpdateRequest $request, Setting $setting)
     {
         $setting->update($request->validated());
         if ($request->hasFile('logo')) {

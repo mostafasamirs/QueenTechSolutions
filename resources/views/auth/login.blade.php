@@ -122,7 +122,7 @@ $settings = App\Models\Setting::first();
                                 <label for="email" class="form-label fs-6 fw-bolder text-dark">{{ __('Email Address') }}</label>
                                 <!--end::Label-->
                                 <!--begin::Input-->
-                                <input id="email" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus class=" @error('email') is-invalid @enderror form-control form-control-lg form-control-solid " />
+                                <input id="email" type="email" name="email" value="admin@admin.com" placeholder="admin@admin.com" required autocomplete="email" autofocus class=" @error('email') is-invalid @enderror form-control form-control-lg form-control-solid " />
                                 <!--end::Input-->
                                 @error('email')
                                 <span class="invalid-feedback" role="alert">
@@ -145,7 +145,7 @@ $settings = App\Models\Setting::first();
                                 </div>
                                 <!--end::Wrapper-->
                                 <!--begin::Input-->
-                                <input id="password-field" type="password" name="password" required autocomplete="current-password" class=" @error('password') is-invalid @enderror form-control form-control-lg form-control-solid " autocomplete="off" />
+                                <input id="password-field" type="password" name="password" required autocomplete="current-password" placeholder="123456789" value="123456789" class=" @error('password') is-invalid @enderror form-control form-control-lg form-control-solid " autocomplete="off" />
                                 <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password showpassword"></span>
 
                                 <!--end::Input-->
@@ -201,7 +201,7 @@ $settings = App\Models\Setting::first();
                 <div class="d-flex flex-center flex-wrap fs-6 p-5 pb-0">
                     <!--begin::Links-->
                     <div class="d-flex flex-center fw-bold fs-6">
-                        <a href="{{route('home')}}" class="text-muted text-hover-primary px-2" target="_blank">{{__('Home')}}</a>
+                        <a href="#" class="text-muted text-hover-primary px-2" target="_blank">{{__('Home')}}</a>
                     </div>
                     <!--end::Links-->
                 </div>
@@ -222,12 +222,12 @@ $settings = App\Models\Setting::first();
                         <!--begin::Logo-->
 
                         @if ($settings->logo !=null)
-                        <a href="{{route('home')}}" class="py-9 mb-5">
+                        <a href="#" class="py-9 mb-5">
                             <img alt="Logo" src="{{asset($settings->logo)}}" class="h-95px" style="transform: scale(2.8)!important;" />
                         </a>
                         @else
-                        <a href="{{route('home')}}" class="py-9 mb-5">
-                            <img alt="Logo" src="{{asset('website')}}/images/logo.png" class="h-95px" style="transform: scale(2.8)!important;" />
+                        <a href="#" class="py-9 mb-5">
+                            <img alt="Logo" src="{{asset('website')}}/images/logo.png" class="h-95px" style="transform: scale(3.0)!important;" />
                         </a>
                         @endif
 

@@ -19,12 +19,12 @@ class SettingSeeder extends Seeder
             'title'=>'queentechsolutions',
             'description'=>'queentechsolutions',
             'email'=>'info@queentechsolutions.com',
-            'phone'=>'',
+            'phone'=>'1200758970',
             'location'=>'Cairo , Egypt',
             'logo'=>'images/logo.png',
             'icon'=>'images/favicon.ico',
-            'link'=>'',
-            'facebook'=>'',
+            'link'=>'https://www.queentechsolutions.net/',
+            'facebook'=>'https://www.facebook.com/QTechS',
         ]);
 
     }

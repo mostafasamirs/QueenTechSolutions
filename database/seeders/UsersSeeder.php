@@ -22,7 +22,7 @@ class UsersSeeder extends Seeder
             'email'=>'admin@admin.com',
             'password'=>Hash::make('123456789'),
             'image'=>'userimage/avataaars.png',
-            'phone'=>'123456789',
+            'phone'=>'01144999586',
             'lang'=>'en',
             'address'=>'cairo',
             'created_by'=>'admin',

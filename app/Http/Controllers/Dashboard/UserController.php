@@ -75,8 +75,6 @@ class UserController extends Controller
             $users->save();
         }
         //upload hasFile image
-
-
         return redirect()->route('users.index')->with('toast_success', __('Created Successfully.'));
     }
 
